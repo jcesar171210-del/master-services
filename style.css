@@ -1,0 +1,188 @@
+.arrow{
+  width: 15px;
+  height: auto;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+
+}
+
+body{
+   background-image: url("assets/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg");
+  background-size: cover; 
+  color: white;
+  font-family: 'Poppins';
+}
+
+button{
+  width: 270px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.096);
+  padding: 16px 32px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s;
+
+}
+button:hover{
+  opacity: 1;
+  transform: translateY(5px);
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+.logo{
+  width: 60px;
+  height: auto;
+  border-radius: 10px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.096);
+    padding: 16px 32px;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+
+  }
+}
+
+a{
+  color: white;
+  opacity: .7;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+a:hover{
+  opacity: 1;
+} 
+
+.seçao1::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  background: linear-gradient( rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.541));
+  z-index: -1;
+}
+.seçao1{
+ 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  align-items: center;
+  gap: 15px;
+  padding: 20% 0;
+  h2 {
+    position: 1000px 500px;
+    font-size: 8vw;
+    font-weight: 600px;
+    color: rgba(255, 255, 255, 0.623);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+
+  }  
+ 
+}
+
+.conteudoPrincipal{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  h1{
+    font-size: 5vw;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    
+  }
+
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    }
+
+}
+
+  .seçao2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    z-index: -1;
+  }
+
+.seçao2{
+  position: relative;
+  height: 1000px;
+  background-color: rgba(19, 12, 41, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20% 0;
+
+  h2{
+    font-size: 4vw;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.863);
+  }
+
+  .divCard{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;;
+
+  }
+
+  .card{
+    width: 32%;
+    padding: 32px 16px;
+  }
+
+  .branco{
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 10px;  }
+}
+
+.transiçao{
+  position: inherit;;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, rgba(19, 12, 41, 0.658), transparent);
+}
+
+img{ height: 60px;
+  width: auto;
+}
