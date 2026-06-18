@@ -22,15 +22,15 @@ body{
 }
 
 button{
-  width: 40vh;
-  height: 15vh;
+  width: 35vh;
+  height: 10vh;
   background-color: rgba(255, 255, 255, 0.096);
   padding: 16px 32px;
   border-radius: 20px;
   backdrop-filter: blur(20px);
   border: none;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
   opacity: 0.8;
   transition: all 0.3s;
@@ -48,6 +48,7 @@ button:hover{
   border-radius: 10px;
 }
 header{
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 4%;
@@ -56,8 +57,9 @@ header{
   right: 0;
   left: auto;
   z-index: 1000;
-  gap: 20px;
+  gap: 100px;
   width: auto;
+  justify-content: space-between;
 
   nav ul{
     display: flex;
@@ -81,14 +83,14 @@ a:hover{
   opacity: 1;
 } 
 
-.seçao1::before{
+.seçao:before{
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 800px;
-  background: linear-gradient( rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.541));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 60%, rgba(5, 20, 60, 0.12) 85%, rgba(5, 20, 60, 0.16) 100%);
   z-index: -1;
 }
 .seçao1{
@@ -96,7 +98,7 @@ a:hover{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 800px;
+  min-height: auto;
   align-items: center;
   gap: 15px;
   padding: 20% 0;
@@ -128,6 +130,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: scaleX(-300px);
    
     }
 
@@ -140,19 +143,18 @@ a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(5, 20, 60, 0.16) 0%, rgba(5, 20, 60, 0.10) 20%, rgba(0, 0, 0, 0) 60%);
     z-index: -1;
   }
 
 .seçao2{
   position: relative;
-  height: 1000px;
   background-color: rgba(19, 12, 41, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  padding: 20% 0;
+  padding: 10% 0;
 
   h2{
     font-size: 4vw;
@@ -160,11 +162,25 @@ a:hover{
     color: rgba(255, 255, 255, 0.863);
   }
 
+
+  .card{
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+  }
+
+
+}
   .divCard{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     font-size: 0.90rem;
+    height: auto;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
     
     
 
@@ -172,9 +188,8 @@ a:hover{
 
   .card{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    width: 32%;
+    width: 500px;
     padding: 32px 16px;
   }
 
@@ -186,14 +201,51 @@ a:hover{
       padding: 30px;
       font-size: 0.90rem;
     }
+
+    .trabalhos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      position: relative;
+       
+      h3{
+    font-size: 3.4rem;
+      }
+     
+    }
+
+
+.trabalhos::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(8, 22, 61, 0.171) 30%, rgba(5, 20, 60, 0.12) 40%, rgba(5, 20, 60, 0.16) 100%);
+  z-index: -1;
+  pointer-events: none;
 }
+
+    .imgeTrabalho{
+      display: flex;
+      height: auto;
+      width: 10vw;
+      flex-direction: row;
+      align-self: start;
+      border-radius: 10px;
+      border: 2px;
+    }
+
 
 img{ height: 60px;
   width: auto;
+  image-rendering: pixelated;
 }
 
 .divImagens{
-  width: 100vh;
+  width: 50vh;
   height: auto;
   display: flex;
   align-items: right;
@@ -201,134 +253,69 @@ img{ height: 60px;
   flex-direction: column;
 }
 
-/* RESPONSIVIDADE */
-@media (max-width: 768px) {
-  button {
-    justify-items:baseline;
-    width: 90%;
-    max-width: 280px;
-    height: auto;
-    padding: 12px 20px;
-    font-size: 18px;
-  }
-  
-  .logo {
-    width: 45px;
-    height: 45px;
-  }
-  
-  header {
-    padding: 3%;
-    right: 0;
-    left: auto;
+.footer{
+    display: flex;
+    background-color: rgb(14, 14, 14);
     width: auto;
-  }
-  
-  nav ul {
-    gap: 12px;
-    padding: 12px 20px;
-    font-size: 13px;
-  }
-  
-  .seçao1 {
-    height: auto;
-    padding: 120px 5% 30px 5%;
-  }
-  
-  .seçao1::before {
-    height: 100%;
-  }
-  
-  .seçao1 h2 {
-    font-size: 28px;
-  }
-  
-  .seçao2 {
-    height: auto;
-    padding: 40px 5%;
-  }
-  
-  .seçao2 h2 {
-    font-size: 24px;
-  }
-  
-  .divCard {
-    flex-direction: column;
+    height: 20vh;
+    flex-direction: row;
     align-items: center;
-  }
-  
-  .card {
-    width: 100%;
-    max-width: 280px !important;
-    padding: 20px 16px;
-  }
-  
-  .card h3 {
-    font-size: 18px;
-    padding: 10px 0;
-  }
-  
-  .divImagens {
-    width: 90%;
-    max-width: 100%;
-  }
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.336);
 }
 
-@media (max-width: 480px) {
-  button {
-    width: 100%;
-    font-size: 16px;
-    padding: 10px 16px;
+@media (max-width: 768px){
+
+  .logo{
+
+    max-width: 40px;
     height: auto;
   }
-  
-  .logo {
-    width: 40px;
-    height: 40px;
-  }
-  
-  header {
-    padding: 2%;
-    right: 0;
-    left: auto;
-    width: auto;
-  }
-  
-  nav ul {
-    gap: 10px;
-    padding: 10px 16px;
-    font-size: 12px;
-  }
-  
-  .seçao1 {
-    padding: 80px 5% 20px 5%;
-  }
-  
-  .seçao1 h2 {
-    font-size: 22px;
-  }
-  
-  .seçao2 {
-    padding: 30px 5%;
-  }
-  
-  .seçao2 h2 {
-    font-size: 20px;
-  }
-  
-  .card {
-    width: 100% !important;
-    padding: 15px 12px;
-  }
-  
-  .card h3 {
-    font-size: 16px;
-    padding: 8px 0;
+
+  header{
+    width: 99%;
+    height: 10%;
   }
 
-  .buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  nav{
+    height: 20;
+    max-width: 60%;
+
+    ul{
+      padding: 8px 16px;
+    }
+    
+    a{
+      font-size: 0.60rem;
+    }
+  }
+
+  .seçao1{
+
+    padding-bottom: 300px;
+
+    h2{
+      font-size: 2.4rem;
+    }
+
+    p{
+      font-size: 0.60rem;
+    }
+  }
+
+  .seçao2{
+    h2{
+      font-size: 1.5rem;
+    }
+
+
+  }
+
+  .button{
+    padding: 8px 16px;
+    font-size: 1rem;
+
   }
 }
