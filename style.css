@@ -110,6 +110,20 @@ a:hover{
  
 }
 
+main{
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  video{
+    max-width: 60%;
+  }
+
+}
+
 .conteudoPrincipal{
   display: flex;
   flex-direction: column;
@@ -320,6 +334,14 @@ img{ height: 60px;
     }
   }
 
+  main{
+
+    video{
+      max-width: 70%;
+      height: auto;
+    }
+  }
+
   .seçao2{
     h2{
       font-size: 1.5rem;
@@ -354,4 +376,5 @@ img{ height: 60px;
     width: 100%;
     padding: 20px 0;
   }
+
 }
