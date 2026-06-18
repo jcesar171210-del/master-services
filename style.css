@@ -205,12 +205,18 @@ a:hover{
     .trabalhos{
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items:center;
+      justify-content: center;
       padding: 10px;
       position: relative;
        
       h3{
     font-size: 3.4rem;
+      }
+
+      aside{
+        display: flex;
+        flex-direction: column;
       }
      
     }
@@ -231,11 +237,13 @@ a:hover{
     .imgeTrabalho{
       display: flex;
       height: auto;
-      width: 10vw;
+      width: 100vw;
       flex-direction: row;
-      align-self: start;
+      align-self: center;
+      justify-content: center;
       border-radius: 10px;
       border: 2px;
+      padding: 100px;
     }
 
 
@@ -245,11 +253,12 @@ img{ height: 60px;
 }
 
 .divImagens{
-  width: 50vh;
-  height: auto;
+  border-radius: 10px;
+  width: 60vw;
+  height: 60vh;
   display: flex;
-  align-items: right;
-  justify-content: right;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -317,5 +326,10 @@ img{ height: 60px;
     padding: 8px 16px;
     font-size: 1rem;
 
+  }
+
+  .divImagens{
+    height: auto;
+    max-width: 60vw;
   }
 }
