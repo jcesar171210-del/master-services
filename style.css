@@ -54,23 +54,20 @@ header{
   padding: 4%;
   position: fixed;
   top: 0;
-  right: 0;
-  left: auto;
+  left: 0;
   z-index: 1000;
   gap: 100px;
-  width: auto;
   justify-content: space-between;
+}
 
-  nav ul{
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-    background-color: rgba(255, 255, 255, 0.096);
-    padding: 16px 32px;
-    border-radius: 8px;
-    backdrop-filter: blur(20px);
-
-  }
+header nav ul{
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.096);
+  padding: 16px 32px;
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
 }
 
 a{
@@ -255,11 +252,20 @@ img{ height: 60px;
 .divImagens{
   border-radius: 10px;
   width: 60vw;
-  height: 60vh;
+  max-width: 700px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.divImagens img,
+.imgeTrabalho img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .footer{
@@ -325,11 +331,27 @@ img{ height: 60px;
   .button{
     padding: 8px 16px;
     font-size: 1rem;
+  }
 
+  .logo{
+    max-width: 40px;
+    height: auto;
+  }
+
+  header{
+    width: 100%;
+    left: 0;
   }
 
   .divImagens{
+    width: 90vw;
+    max-width: 320px;
     height: auto;
-    max-width: 60vw;
+    padding: 0;
+  }
+
+  .imgeTrabalho{
+    width: 100%;
+    padding: 20px 0;
   }
 }
